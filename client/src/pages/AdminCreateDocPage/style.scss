@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.row.doc-create {
+    margin-right: 0;
+    margin-left: 0;
+
+    .ant-affix {
+        width: 100px;
+        background: $light;
+    }
+}
+
+.tools-wrapper {
+    max-width: 100px !important;
+}
+
+.tools-container {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sheets-container {
+    // padding-top: 10px;
+    // max-height: calc(100vh - 106px);
+    // overflow: auto;
+}
+
+button.btn-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-actions {
+    width: 450px;
+    padding: 25px 30px;
+}
+
+
+.sheet-controller {
+    display: flex;
+    flex-direction: column;
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+.align-text {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+    span {
+        cursor: pointer;
+        &:hover {
+            color: $primary;
+        }
+    }
+}

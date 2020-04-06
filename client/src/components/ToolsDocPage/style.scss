@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.tool-item {
+    width: 100%;
+    height: 80px;
+    color: $secondary;
+    // margin: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-right: 1px solid $light;
+    &:hover {
+        border-right: 1px solid $success;
+        // background: $success;
+        color: $success;
+    }
+
+    &.drag {
+        border: 1px solid $success;
+    }
+}

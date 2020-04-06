@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.users-list {
+    margin-top: 50px;
+
+    .user-item {
+        opacity: .5;
+    
+        &.active-user {
+            opacity: 1 !important;
+        }
+    }
+
+    .list-item-user {
+        &::before {
+            // position: absolute;
+            left: -70px;
+            margin-right: 20px;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid $warning;
+        }
+        &.success::before {
+            border: 3px solid $success;
+        }
+    }
+}
+
+.list-item-body {
+    img {
+        max-width: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+.sort-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    span {
+        margin-right: 15px;
+    }
+}

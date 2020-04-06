@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.user-info {
+    .avatar-container {
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        color: rgba(0, 0, 0, 0.65);
+    }
+    
+    .user-description {
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .info-container {
+        padding: 50px 20px;
+    }
+
+
+    .user-status {
+        margin-left: 5px;
+        padding: 10px 30px;
+        border-radius: 2px;
+        border: 1px solid $warning;
+        color: $warning;
+        &.active {
+            border: 1px solid $success;
+            color: $success;
+        }
+    }
+
+    .control-container {
+        button {
+            &::first-of-type {
+                margin-top: 0;
+            }
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
