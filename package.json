@@ -1,0 +1,10 @@
+{
+    "name": "app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "install": "cd server && sudo npm install && cd ../client/ && sudo npm install",
+      "start": "cd server && sudo npm run start && cd ../client && sudo npm run start"
+    }
+  }
+  
